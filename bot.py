@@ -1,7 +1,7 @@
 import telebot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
 
-TOKEN = "7099919089:AAGV2FWnCzOFQlqGvJkQ-bceNJ7odDIMiGY"
+TOKEN = ""
 
 bot = telebot.TeleBot(TOKEN)
 

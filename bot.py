@@ -31,7 +31,7 @@ def echo_message(message):
 
 
 @bot.message_handler(func=lambda message: message if ('Имена' in message.text) else None)
-def echo_message(message):
+def echo_sort(message):
     print(f"Пользователь {message.chat.first_name}-{message.chat.username} пишет '{message.text}'")
     length = len(message.text)
     first_names = message.text[7:length]
@@ -54,7 +54,7 @@ def echo_message(message):
 
 
 @bot.message_handler(func=lambda message: message)
-def echo_message(message):
+def echo_unknown_message(message):
     print(f"Пользователь {message.chat.first_name}-{message.chat.username} пишет '{message.text}'")
     markup = ReplyKeyboardRemove()
     answer = random.choice(STUBS)
